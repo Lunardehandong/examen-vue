@@ -1,26 +1,29 @@
 {
-  "name": "hospitales",
-  "private": true,
+  "name": "hospitales-app",
   "version": "0.0.0",
+  "private": true,
   "type": "module",
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@quasar/extras": "^1.17.0",
     "axios": "^1.12.2",
     "pinia": "^3.0.3",
-    "react-router-dom": "^7.9.3",
+    "quasar": "^2.18.5",
     "vue": "^3.5.22",
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.14",
+    "@quasar/vite-plugin": "^1.10.0",
     "@vitejs/plugin-vue": "^6.0.1",
-    "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.14",
-    "vite": "^7.1.7"
+    "sass-embedded": "^1.93.2",
+    "vite": "^7.1.7",
+    "vite-plugin-vue-devtools": "^8.0.2"
   }
 }
